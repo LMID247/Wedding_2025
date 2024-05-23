@@ -17,7 +17,7 @@ footer img {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     background-size: cover;
-    background-color: #ffffff;
+    background-color: #797979;
 }
 @keyframes fadeInAnimation {
     0% {
@@ -26,4 +26,13 @@ footer img {
     100% {
         opacity: 1;
     }
+}
+.form-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
