@@ -80,11 +80,11 @@ select {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #e9c4ac;
+    color: #eb7121;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px;S
     cursor: pointer;
     font-size: 16px;
 }
@@ -92,3 +92,14 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+.white-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+*{
+    font-family: "Dancing Script", cursive;
+  }

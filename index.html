@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Site</title>
+    <title>Annie & Zoey's Wedding</title>
     <link rel="icon" href="Images\Wedding-rings-48-Icon.png" type="image">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,21 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <header>
-    <img src="Images/wedding-vintage_logo.png" alt="Initial Logo" class="logo">
+    
 
 
 </header>
 
 <body>
+    <div class="white-box">
+        <img src="Images/wedding-vintage_logo.png" alt="Initial Logo" class="logo">
     <div class="form-container">
-        <h1>Wedding Dinner Request</h1>
+        <h1>Dinner Request</h1>
         <form action="/submit-dinner-request" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br>
-            
+
             <label for="main-course">Main Course:</label>
             <select id="main-course" name="main-course">
                 <option value="chicken">Chicken</option>
@@ -34,7 +36,7 @@
                 <option value="fish">Fish</option>
                 <!-- Add more options as needed -->
             </select><br>
-            
+
             <label for="side-dish">Side Dish:</label>
             <select id="side-dish" name="side-dish">
                 <option value="salad">Salad</option>
@@ -42,7 +44,7 @@
                 <option value="potatoes">Potatoes</option>
                 <!-- Add more options as needed -->
             </select><br>
-            
+
             <label for="dessert">Dessert:</label>
             <select id="dessert" name="dessert">
                 <option value="cake">Cake</option>
@@ -50,9 +52,12 @@
                 <option value="fruit">Fruit</option>
                 <!-- Add more options as needed -->
             </select><br>
-            
+
             <input type="submit" value="Submit">
         </form>
+    </div>
+</div>
+        
     </div>
 
 </body>
