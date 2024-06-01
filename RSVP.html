@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annie & Zoey's Wedding</title>
-    <link rel="icon" href="Images\Wedding-rings-48-Icon.png" type="image">
+    <link rel="icon" href="Images/Wedding-rings-48-Icon.png" type="image">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<header>
-
-
-
-</header>
-
 <body>
+    <header>
+        <!-- Header content -->
+    </header>
     <div class="white-box">
         <img src="Images/wedding-vintage_logo.png" alt="Initial Logo" class="logo">
         <div class="form-container">
             <h1>RSVP</h1>
-            <form action="/submit-attendance-request" method="post">
-
+            <form id="rsvp-form">
                 <label for="attendance">Can you attend?</label>
                 <select id="attendance" name="attendance">
-                    <option value="Yes">Yes! Cant wait!</option>
+                    <option value="Yes">Yes! Can't wait!</option>
                     <option value="No">Sorry to decline.</option>
-                    </select><br>
-
+                </select><br>
                 <input type="submit" value="Submit">
             </form>
         </div>
+        <button onclick="window.location.href='index.html'">Back Home</button>
     </div>
+    <footer>
+        <p>&copy; LMHM - TME 2024 <img src="Images/TME_Logo.png" alt="TME Logo"> - All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+            const selectElement = document.getElementById('attendance');
+            const selectedOption = selectElement.options[selectElement.selectedIndex].value;
+            if (selectedOption === 'Yes') {
+                window.location.href = 'Food.html';
+            } else if (selectedOption === 'No') {
+                window.location.href = 'thank_you.html';
+            }
+            event.preventDefault(); // Prevent the default form submission behavior
+        });
+    </script>
 </body>
-
-<main>
-<button>"Back Home"</button>
-</main>
-
-<footer>
-    <p>&copy; LMHM - TME 2024 <img src="Images/TME_Logo.png" alt="TME Logo"> - All rights reserved.</p>
-</footer>
-</body>
-
 </html>
